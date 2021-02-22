@@ -3,7 +3,7 @@
 # How to run the App❗🤔
 
 
-# Note: I've used MongoDB Compass Offline Server for this project!
+# Note: I've used MongoDB Compass Offline Database for this project!
 # How to start MongoDB Compass after you already installed it? 
 1. Open up your Terminal and type this command there ==> systemctl start mongod
 2. Check if it works using ==> systemctl status mongod
