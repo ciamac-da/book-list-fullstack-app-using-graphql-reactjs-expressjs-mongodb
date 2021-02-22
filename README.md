@@ -1,6 +1,6 @@
 # book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb
 
-# How to run the App? ❗ 🤔
+# How to run the App❗🤔
 
 
 # Note : I've used MongoDB Compass Offline Server for this project!
