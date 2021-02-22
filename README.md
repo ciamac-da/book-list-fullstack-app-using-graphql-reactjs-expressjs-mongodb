@@ -10,6 +10,6 @@ how to start MongoDB Compass server after you already installed it?
 Connected To Database
 Server running on port 4000
 
-# Go to react code path and try to start reactApp using ==> yarn/npm start
+# Go to reactApp path and try to start reactApp using ==> yarn/npm start
  
 # Have Fun:)
