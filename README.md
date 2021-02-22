@@ -4,7 +4,8 @@
 how to start MongoDB Compass server after you already installed it? 
 1. Open up your Terminal and type this command there ==> systemctl start mongod
 2. Check if it works using ==> systemctl status mongod
-3. If you got Active : active means server is running 
+3. If you got Active : active means server is running
+4. Now open MongoDB Compass App and click on conncet button to see the database!
 
 # After that go to the server folder and start the server using ==> npm start 
 Connected To Database
