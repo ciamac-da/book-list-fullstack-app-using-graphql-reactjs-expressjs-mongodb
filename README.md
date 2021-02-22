@@ -4,7 +4,7 @@
 
 
 # Note : I've used MongoDB Compass Offline Server for this project!
-how to start MongoDB Compass server after you already installed it? 
+# How to start MongoDB Compass server after you already installed it? 
 1. Open up your Terminal and type this command there ==> systemctl start mongod
 2. Check if it works using ==> systemctl status mongod
 3. If you got Active : 🟢 active means server is running
