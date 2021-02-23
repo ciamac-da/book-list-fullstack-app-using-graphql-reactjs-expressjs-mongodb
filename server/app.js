@@ -1,6 +1,6 @@
 const express = require('express') //! To import express
 const schema = require('./schema/schema')
-const graphqlHTTP = require('express-graphql') //! This package helps express to understand GraphQL and provides a 
+const {graphqlHTTP} = require('express-graphql') //! This package helps express to understand GraphQL and provides a 
 //! simple way to create an express server . We use this as a middleware as a sigle routes
 
 
@@ -9,8 +9,11 @@ const app = express(); //! To store express package in a variable
 
 //! Setting up a middleware!
 app.use('/graphql',graphqlHTTP({
-    // schema to represent how our graph looks
-}))
+    //! schema to represent how our graph looks
+    //!schema: schema ==> the names are same and because of ES6 feature we can just easily write schema
+    schema,
+    graphiql: true //! we wanna graphiql tool in /graphql path
+}));
 
 
 app.listen(4000,() => {
