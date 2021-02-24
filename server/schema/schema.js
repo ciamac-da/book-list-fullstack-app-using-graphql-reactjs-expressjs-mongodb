@@ -7,7 +7,7 @@ const {
     GraphQLSchema
 } = graphql
 
-// Dummy Data
+//! Dummy Data
 var books = [
     { name: 'Name of the wind', genre:'Fantasy', id:'1'},
     { name: 'The Final Empire', genre:'Fantasy', id:'2'},
