@@ -4,14 +4,24 @@ const _= require('lodash')
 const {
     GraphQLObjectType,
     GraphQLString,
-    GraphQLSchema
+    GraphQLSchema,
+    GraphQLID,
+    GraphQLInt
 } = graphql
 
-//! Dummy Data
+//! Dummy Data just for testing
 var books = [
-    { name: 'Name of the wind', genre:'Fantasy', id:'1'},
-    { name: 'The Final Empire', genre:'Fantasy', id:'2'},
-    { name: 'The Long Earth', genre:'Sci-Fi', id:'3'},
+    { name: 'The Long Earth' ,   genre:'Sci-Fi' , id:'1'},
+    { name: 'Nuu'            ,   genre:'Fantasy', id:'2'},
+    { name: 'Hack the Planet',   genre:'Horror' , id:'3'},
+    { name: 'Death Stranding',   genre:'Fantasy', id:'4'},
+];
+
+var authors = [
+    { name: 'Marti4n',     age: 33, id:'1'},
+    { name: 'Anx',         age: 37, id:'2'},
+    { name: 'CiHakTor',    age: 31, id:'3'},
+    { name: 'Sam Bridges', age: 40, id:'4'},
 ];
 
 
@@ -20,13 +30,30 @@ const BookType = new GraphQLObjectType({
     name: 'Book',
     fields: () => ({
         id: {
-            type: GraphQLString
+            type: GraphQLID
         },
         name: {
             type: GraphQLString
         },
         genre: {
             type: GraphQLString
+        },
+    })
+});
+
+
+const AuthorType = new GraphQLObjectType({
+    //! A function which takes an Object
+    name: 'Author',
+    fields: () => ({
+        id: {
+            type: GraphQLID
+        },
+        name: {
+            type: GraphQLString
+        },
+        age: {
+            type: GraphQLInt
         },
     })
 });
@@ -41,14 +68,28 @@ const RootQuery = new GraphQLObjectType({
             type: BookType,
             args: {
                 id: {
-                    type: GraphQLString
+                    type: GraphQLID
                 }
             },
             resolve(parent, args){
                 // Code to get data from db
                return _.find(books,{id: args.id});
             }
-        }
+        },
+
+       author: {
+            type: AuthorType,
+            args: {
+                id: {
+                    type: GraphQLID
+                }
+            },
+            resolve(parent, args){
+                // Code to get data from db
+               return _.find(authors,{id: args.id});
+            }
+        },
+
     }
 })
 

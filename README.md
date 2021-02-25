@@ -10,13 +10,18 @@
 3. If you got Active : 🟢 active means server is running
 4. Now open MongoDB Compass App and click on conncet button to see the database! 😎
 
-# After that go to the server folder and start the server using ==> npm start 
+
+# Go to the server folder and install the Dependencies using ==> npm install
+
+
+# After that Start the server using ==> npm start 
 Connected To Database
 Server running on port 4000 🎉
 
-# Go to ReactApp path and try to install the Dependencies using ==> npm install
+# Now go to ReactApp folder and try to install the Dependencies using ==> npm install
 
 
 # Already did❓🙂  So now try to start reactApp using ==> yarn/npm start
+
  
 # Have Fun 🤘
