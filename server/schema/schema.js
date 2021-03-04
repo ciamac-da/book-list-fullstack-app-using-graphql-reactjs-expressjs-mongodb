@@ -6,15 +6,19 @@ const {
     GraphQLString,
     GraphQLSchema,
     GraphQLID,
-    GraphQLInt
+    GraphQLInt,
+    GraphQLList,
 } = graphql
 
 //! Dummy Data just for testing
 var books = [
-    { name: 'The Long Earth' ,   genre:'Sci-Fi' , id:'1', authorid:"1"},
-    { name: 'Nuu'            ,   genre:'Fantasy', id:'2', authorid:"2"},
-    { name: 'Hack the Planet',   genre:'Horror' , id:'3', authorid:"3"},
-    { name: 'Death Stranding',   genre:'Fantasy', id:'4', authorid:"4"},
+    { name: 'The Long Earth'     ,   genre:'Sci-Fi' , id:'1', authorid:"1"},
+    { name: 'Nuu'                ,   genre:'Fantasy', id:'2', authorid:"2"},
+    { name: 'Hack the Planet'    ,   genre:'Horror' , id:'3', authorid:"3"},
+    { name: 'Death Stranding'    ,   genre:'Fantasy', id:'4', authorid:"4"},
+    { name: 'One second to Mars' ,   genre:'Sci-Fi' , id:'1', authorid:"1"},
+    { name: 'Free Hacker'        ,   genre:'Fantasy', id:'2', authorid:"2"},
+    { name: 'Kali Linux'         ,   genre:'Horror' , id:'3', authorid:"3"},
 ];
 
 var authors = [
@@ -61,6 +65,12 @@ const AuthorType = new GraphQLObjectType({
         age: {
             type: GraphQLInt
         },
+        books: {
+            type: new GraphQLList(BookType),
+            resolve(parent, args){
+                return _.filter(books, {authorid: parent.id})
+            }
+        }
     })
 });
 
