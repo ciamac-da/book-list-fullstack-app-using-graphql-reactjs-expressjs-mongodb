@@ -11,10 +11,10 @@ const {
 
 //! Dummy Data just for testing
 var books = [
-    { name: 'The Long Earth' ,   genre:'Sci-Fi' , id:'1'},
-    { name: 'Nuu'            ,   genre:'Fantasy', id:'2'},
-    { name: 'Hack the Planet',   genre:'Horror' , id:'3'},
-    { name: 'Death Stranding',   genre:'Fantasy', id:'4'},
+    { name: 'The Long Earth' ,   genre:'Sci-Fi' , id:'1', authorid:"1"},
+    { name: 'Nuu'            ,   genre:'Fantasy', id:'2', authorid:"2"},
+    { name: 'Hack the Planet',   genre:'Horror' , id:'3', authorid:"3"},
+    { name: 'Death Stranding',   genre:'Fantasy', id:'4', authorid:"4"},
 ];
 
 var authors = [
@@ -38,6 +38,12 @@ const BookType = new GraphQLObjectType({
         genre: {
             type: GraphQLString
         },
+        author: {
+            type: AuthorType,
+            resolve(parent, args){
+                return _.find(authors, {id: parent.authorid})
+            }
+        }
     })
 });
 

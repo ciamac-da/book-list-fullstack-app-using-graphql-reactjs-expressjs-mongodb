@@ -14,7 +14,13 @@
 # Go to the server folder and install the Dependencies using ==> npm install
 
 
-# After that Start the server using ==> npm start 
+# Type node/nodemon app in terminal to start the process ==> 
+ Now listening for requests on port 4000
+
+# Now you can type http://localhost:4000/graphql in browser and get access to GraphiQL sandbox!
+ GraphiQL is an in-browser tool for writing, validating, and testing GraphQL queries.
+
+
 Connected To Database
 Server running on port 4000 🎉
 
