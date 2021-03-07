@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV !== "production")
+if(process.env.DB !== "production")
 require("dotenv").config()
 const express = require('express') //! To import express
 const schema = require('./schema/schema')
@@ -28,3 +28,5 @@ app.listen(4000,() => {
     //! Callback function
     console.log("Now listening for requests on port 4000")
 })
+//DB = 'mongodb+srv://marti4n00:lostDEMON392%3F%21@graphql-books.xetec.mongodb.net/test'
+// 
