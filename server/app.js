@@ -28,5 +28,3 @@ app.listen(4000,() => {
     //! Callback function
     console.log("Now listening for requests on port 4000")
 })
-//DB = 'mongodb+srv://marti4n00:lostDEMON392%3F%21@graphql-books.xetec.mongodb.net/test'
-// 

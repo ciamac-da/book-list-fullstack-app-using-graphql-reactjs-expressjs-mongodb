@@ -11,7 +11,7 @@ const {
 } = graphql
 
 //! Dummy Data just for testing
-var books = [
+/* var books = [
     { name: 'The Long Earth'     ,   genre:'Sci-Fi' , id:'1', authorid:"1"},
     { name: 'Nuu'                ,   genre:'Fantasy', id:'2', authorid:"2"},
     { name: 'Hack the Planet'    ,   genre:'Horror' , id:'3', authorid:"3"},
@@ -26,7 +26,7 @@ var authors = [
     { name: 'Anx',         age: 37, id:'2'},
     { name: 'CiHakTor',    age: 31, id:'3'},
     { name: 'Sam Bridges', age: 40, id:'4'},
-];
+]; */
 
 
 const BookType = new GraphQLObjectType({
@@ -45,7 +45,7 @@ const BookType = new GraphQLObjectType({
         author: {
             type: AuthorType,
             resolve(parent, args){
-                return _.find(authors, {id: parent.authorid})
+               // return _.find(authors, {id: parent.authorid})
             }
         }
     })
@@ -68,7 +68,7 @@ const AuthorType = new GraphQLObjectType({
         books: {
             type: new GraphQLList(BookType),
             resolve(parent, args){
-                return _.filter(books, {authorid: parent.id})
+               // return _.filter(books, {authorid: parent.id})
             }
         }
     })
@@ -89,7 +89,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args){
                 // Code to get data from db
-               return _.find(books,{id: args.id});
+              // return _.find(books,{id: args.id});
             }
         },
 
@@ -102,19 +102,19 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args){
                 // Code to get data from db
-               return _.find(authors,{id: args.id});
+            //   return _.find(authors,{id: args.id});
             }
         },
         books: {
             type: new GraphQLList(BookType),
             resolve(parent, args){
-                return books
+         //       return books
             }
         },
         authors: {
             type: new GraphQLList(AuthorType),
             resolve(parent, args){
-                return authors
+           //     return authors
             }
         }
 
