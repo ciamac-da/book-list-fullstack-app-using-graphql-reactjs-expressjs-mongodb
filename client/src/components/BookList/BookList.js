@@ -1,15 +1,8 @@
 import React, { Component } from "react";
-import { gql } from "graphql-tag";
 import { graphql } from "@apollo/react-hoc";
+import { getBooksQuery} from '../../queries/queries'
 
-const getBooksQuery = gql`
-  {
-    books {
-      name
-      id
-    }
-  }
-`;
+
 
 class BookList extends Component {
   displayBooks() {
