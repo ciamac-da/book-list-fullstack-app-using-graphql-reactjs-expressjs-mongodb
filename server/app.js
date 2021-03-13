@@ -15,7 +15,7 @@ const server = new ApolloServer({schema});
 server.applyMiddleware({app})
 
 // Allow cross-origin requests
-app.use(cors());
+app.use(cors({}));
 
 mongoose.connect( process.env.DB, 
 { useNewUrlParser: true },

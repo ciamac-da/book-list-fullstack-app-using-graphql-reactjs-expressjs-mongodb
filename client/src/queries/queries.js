@@ -32,7 +32,7 @@ const addBookMutation = gql`
 
 
 const getBookQuery = gql`
-  query($id: ID!) {
+  query($id: ID) {
     book(id: $id) {
       id
       name
@@ -41,10 +41,10 @@ const getBookQuery = gql`
         id
         name
         age
-      }
-      books {
-        name
-        id
+        books {
+          name
+          id
+        }
       }
     }
   }
