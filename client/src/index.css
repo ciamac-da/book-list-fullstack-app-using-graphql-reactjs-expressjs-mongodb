@@ -3,8 +3,21 @@
   margin: 0;
   padding: 0;
 }
+
+
 body{
   background-color: silver;
+  word-spacing: 1px;
+}
+
+.myH1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+  position: relative;
+  top: 10px;
+  padding: 20px;
 }
 
 #main{
@@ -15,22 +28,35 @@ height: 100%;
 
 #book-list{
   padding: 0;
+
 }
 
 #book-list li{
   display: inline-block;
   margin: 12px;
+  position: relative;
   padding: 10px;
+  font-size: 20px;
   border-radius: 4px;
   border: 1px solid black;
-  box-shadow:1px 2px 3px rgba(0,0,0,0.3);
+  box-shadow:5px 2px 3px rgba(0,0,0,0.3);
   cursor: pointer;
   color: white;
   background-color: rgb(57, 146, 57);
+  transition: 1s;
 }
+
+#book-list li:hover{
+  background-color: gray;
+  transition: 1s;
+  box-shadow:5px 2px 3px rgba(0,0,0,0.3);
+}
+
 
 input{
   text-align: center;
+  font-size: 20px;
+
 }
 
 #main h1{
@@ -39,20 +65,19 @@ input{
 }
 
 form{
-  padding: 20px;
   margin: auto;
   left: 0;
   bottom: 0;
   width: 345px;
   position: relative;
-  top: 10px;
+  top: 90px;
 }
 @media (min-width: 400px) {
   form {
-    padding: 20px;
     margin: auto;
     position: relative;
-    top: 10px;
+    top: 80px;
+    border-radius: 10px;
   }
 }
 
@@ -79,18 +104,44 @@ form select, form input{
   box-sizing: border-box;
 }
 
+select option{
+  font-size: 1.5em;
+  text-align: center;
+  background-color: silver;
+}
+
+select{
+  background-color: silver;
+  font-size: 1.1em;
+
+}
+
+select option:active{
+  font-size: 1.5em;
+  text-align: center;
+}
+
 form button{
 font-size: 2em;
 background-color: green;
 border: 0;
-padding: 0 10px;
 border-radius: 20px;
 color: white;
 cursor: pointer;
+margin: 5px;
+color: black;
+transition: 1s;
+}
+
+form button:hover{
+  background-color: silver;
+  transition: 1s;
 }
 
 
 #book-details{
+  position: relative;
+  top: 40px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -101,4 +152,15 @@ cursor: pointer;
   box-shadow: -2px -3px -5px rgba(0,0,0,0.3);
 }
 
+.details{
+  color: silver;
+  padding: 20px;
+}
 
+.allBooksText{
+  margin-top: 40px;
+}
+
+.authorName{
+  margin-top: 40px;
+}

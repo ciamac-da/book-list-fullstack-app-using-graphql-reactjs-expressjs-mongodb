@@ -24,7 +24,7 @@ class BookList extends Component {
   render() {
     console.log(this.props);
     return (
-      <div>
+      <div className="myList">
         <ul id="book-list"> {this.displayBooks()} 
         <BookDetails bookId={this.state.selected}/> 
         </ul>{" "}
