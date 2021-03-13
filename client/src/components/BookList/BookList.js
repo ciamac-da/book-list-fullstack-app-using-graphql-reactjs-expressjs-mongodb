@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { graphql } from "@apollo/react-hoc";
-import { getBooksQuery} from '../../queries/queries'
-
+import { getBooksQuery} from '../../queries/queries';
+import BookDetails from "../BookDetails/BookDetails"
 
 
 class BookList extends Component {
@@ -19,7 +19,9 @@ class BookList extends Component {
     console.log(this.props);
     return (
       <div>
-        <ul id="book-list"> {this.displayBooks()} </ul>{" "}
+        <ul id="book-list"> {this.displayBooks()} 
+        <li> <BookDetails /> </li>
+        </ul>{" "}
       </div>
     );
   }
