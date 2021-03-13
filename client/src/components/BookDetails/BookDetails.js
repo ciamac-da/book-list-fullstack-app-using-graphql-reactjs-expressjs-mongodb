@@ -29,7 +29,7 @@ class BookDetails extends Component {
     render() {
         console.log(this.props)
       return (
-        <div id="book-detail">
+        <div id="book-details">
          {this.displayBookDetails()}
         </div>
       );

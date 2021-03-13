@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <div className="App">
-          <h1> Heyy </h1>
+          <h1> Booklist Mern App using React  , GraphQL, Express, MongoDB </h1>
           <BookList />
           <AddBook />
         </div>

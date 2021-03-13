@@ -40,12 +40,12 @@ class AddBook extends Component {
       <form id="add-books" onSubmit={this.submitForm.bind(this)}>
         <div className="field">
           <label> Book Name: </label> 
-          <input type="text" onChange={ (e) => this.setState({name: e.target.value}) } />
+          <input placeholder="Enter a Book Name..." type="text" onChange={ (e) => this.setState({name: e.target.value}) } />
         </div>
 
         <div className="field">
           <label> Genre: </label> 
-          <input type="text" onChange={ (e) => this.setState({genre: e.target.value})} />
+          <input placeholder="Enter a Genre..." type="text" onChange={ (e) => this.setState({genre: e.target.value})} />
         </div>
 
         <div className="field">
@@ -54,9 +54,8 @@ class AddBook extends Component {
             <option> Select Author </option>{" "}
             {this.displayAuthors()}
           </select>{" "}
-        </div>
-
         <button> + </button>
+        </div>
       </form>
     );
   }
