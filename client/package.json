@@ -1,8 +1,7 @@
 {
-  "homepage": "http://ciamac-da.github.io/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb",
   "name": "client",
   "version": "0.1.0",
-  "proxy": "http://localhost:4000",
+  "proxy": "http://localhost:4000/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.11",

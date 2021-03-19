@@ -27,7 +27,6 @@ mongoose.connection.once('open',()=>{
 //! Setting up a middleware!
 app.use('/graphql',graphqlHTTP({
     //! schema to represent how our graph looks
-    //!schema: schema ==> the names are same and because of ES6 feature we can just easily write schema
     schema,
     graphiql: true //! we wanna graphiql tool in /graphql path
 }));
