@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ciamac-da.github.io/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb",
+  "homepage": "https://github.com/ciamac-da/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb#readme",
   "name": "book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb",
   "version": "1.0.0",
   "description": "https://ciamac-da.github.io/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb/",
@@ -7,6 +7,8 @@
   "scripts": {
     "start": "npm run server",
     "devel": "concurrently 'npm --prefix server run devel' 'npm --prefix client run start' ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,10 @@
   "bugs": {
     "url": "https://github.com/ciamac-da/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb/issues"
   },
-  "homepage": "https://github.com/ciamac-da/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb#readme",
   "dependencies": {
     "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
