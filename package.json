@@ -5,6 +5,7 @@
   "description": "https://ciamac-da.github.io/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb/",
   "main": "index.js",
   "scripts": {
+    "setup": "git submodule init && git submodule update && npm install && npm --prefix client install && npm --prefix server install",
     "start": "npm run server",
     "devel": "concurrently 'npm --prefix server run devel' 'npm --prefix client run start' ",
     "predeploy": "npm run build",
