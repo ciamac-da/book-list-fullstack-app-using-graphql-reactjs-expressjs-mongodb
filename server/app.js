@@ -4,7 +4,6 @@ const express = require('express') //! To import express
 const schema = require('./schema/schema')
 const {graphqlHTTP} = require('express-graphql') //! This package helps express to understand GraphQL and provides a 
 //! simple way to create an express server . We use this as a middleware as a sigle routes
-const cors = require("cors");
 const { ApolloServer } = require("apollo-server-express")
 const mongoose = require("mongoose");
 
@@ -15,7 +14,6 @@ const server = new ApolloServer({schema});
 server.applyMiddleware({app})
 
 // Allow cross-origin requests
-app.use(cors({}));
 
 mongoose.connect( process.env.DB, 
 { useNewUrlParser: true },
