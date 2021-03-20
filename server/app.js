@@ -34,7 +34,6 @@ if(process.env.DB === "production"){
     app.use(express.static('client/build'));
 }
 
-
 app.listen(PORT,() => {
     //! Callback function
     console.log(`Now listening for requests on port ${PORT}`)
