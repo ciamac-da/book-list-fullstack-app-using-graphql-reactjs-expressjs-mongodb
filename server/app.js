@@ -9,6 +9,7 @@ const mongoose = require("mongoose");
 
 
 const app = express(); //! To store express package in a variable
+const PORT = process.env.PORT || 4000;
 
 const server = new ApolloServer({schema});
 server.applyMiddleware({app})
@@ -30,7 +31,7 @@ app.use('/graphql',graphqlHTTP({
 }));
 
 
-app.listen(4000,() => {
+app.listen(PORT,() => {
     //! Callback function
-    console.log("Now listening for requests on port 4000")
+    console.log(`Now listening for requests on port ${PORT}`)
 })
