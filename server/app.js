@@ -30,6 +30,10 @@ app.use('/graphql',graphqlHTTP({
     graphiql: true //! we wanna graphiql tool in /graphql path
 }));
 
+if(process.env.DB === "production"){
+    app.use(express.static('client/build'));
+}
+
 
 app.listen(PORT,() => {
     //! Callback function
