@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "git submodule init && git submodule update && npm install && npm --prefix client install && npm --prefix server install",
-    "start": "npm run server",
+    "start": "npm --prefix server run",
     "devel": "concurrently 'npm --prefix server run devel' 'npm --prefix client run start' ",
     "predeploy": "npm run build",
     "install": "npm --prefix server install && npm --prefix client install",
