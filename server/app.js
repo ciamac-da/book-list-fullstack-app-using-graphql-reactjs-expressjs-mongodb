@@ -1,4 +1,4 @@
-if(process.env.DB !== "production")
+if(process.env.NODE_ENV !== "production")
 require("dotenv").config()
 const express = require('express') //! To import express
 const schema = require('./schema/schema')
@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 const app = express(); //! To store express package in a variable
 const PORT = process.env.PORT || 4000;
 
-if(process.env.DB === "production")
+if(process.env.NODE_ENV === "production")
   app.use(express.static("../client/build"));
 
 const server = new ApolloServer({schema});
