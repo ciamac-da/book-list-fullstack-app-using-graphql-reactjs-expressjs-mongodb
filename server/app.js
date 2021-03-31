@@ -11,6 +11,9 @@ const mongoose = require("mongoose");
 const app = express(); //! To store express package in a variable
 const PORT = process.env.PORT || 4000;
 
+if(process.env.DB === "production")
+  app.use(express.static("../client/build"));
+
 const server = new ApolloServer({schema});
 server.applyMiddleware({app})
 

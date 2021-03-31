@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "git submodule init && git submodule update && npm install && npm --prefix client install && npm --prefix server install",
-    "start": "concurrently 'npm --prefix server run devel' 'npm --prefix client run start' ",
+    "start": "npm --prefix server start",
     "devel": "concurrently 'npm --prefix server run devel' 'npm --prefix client run start' ",
     "predeploy": "npm run build",
     "install": "npm --prefix server install && npm --prefix client install",
@@ -14,7 +14,7 @@
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ciamac-da/book-list-fullstack-app-using-graphql-reactjs-expressjs-mongodb.git"
