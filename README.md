@@ -47,8 +47,9 @@ WantedBy=multi-user.target
 
 
 8- sudo systemctl daemon-reload
-9- sudo systemctl start server
-10- sudo systemctl restart nginx.service
+9- suso systemctl enable server
+10- sudo systemctl start server
+11- sudo systemctl restart nginx.service
 
 
 
