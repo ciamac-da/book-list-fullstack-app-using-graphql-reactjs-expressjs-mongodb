@@ -38,7 +38,6 @@ if(process.env.DB === "production"){
  
 }
 
-/* process.env.DB === "production" ? new InvariantError() : new InvariantError(message) */
 
 app.listen(PORT,() => {
     //! Callback function
