@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@apollo/client@^3.3.11", "@apollo/client@latest":
-  "integrity" "sha512-54+D5FB6RJlQ+g37f432gaexnyvDsG5X6L9VO5kqN54HJlbF8hCf/8CXtAQEHCWodAwZhy6kOLp2RM96829q3A=="
-  "resolved" "https://registry.npmjs.org/@apollo/client/-/client-3.3.11.tgz"
-  "version" "3.3.11"
+"@apollo/client@^3.3.13", "@apollo/client@latest":
+  "integrity" "sha512-usiVmXiOq0J/GpyIOIhlF8ItHpiPJObC7zoxLYPoOYj3G3OB0hCIcUKs3aTJ3ATW7u8QxvYgRaJg72NN7E1WOg=="
+  "resolved" "https://registry.npmjs.org/@apollo/client/-/client-3.3.13.tgz"
+  "version" "3.3.13"
   dependencies:
     "@graphql-typed-document-node/core" "^3.0.0"
     "@types/zen-observable" "^0.8.0"
-    "@wry/context" "^0.5.2"
-    "@wry/equality" "^0.3.0"
+    "@wry/context" "^0.6.0"
+    "@wry/equality" "^0.4.0"
     "fast-json-stable-stringify" "^2.0.0"
     "graphql-tag" "^2.12.0"
     "hoist-non-react-statics" "^3.3.2"
-    "optimism" "^0.14.0"
+    "optimism" "^0.15.0"
     "prop-types" "^15.7.2"
     "symbol-observable" "^2.0.0"
-    "ts-invariant" "^0.6.0"
+    "ts-invariant" "^0.7.0"
     "tslib" "^1.10.0"
     "zen-observable" "^0.8.14"
 
@@ -2076,11 +2076,6 @@
   dependencies:
     "source-map" "^0.6.1"
 
-"@types/ungap__global-this@^0.3.1":
-  "integrity" "sha512-+/DsiV4CxXl6ZWefwHZDXSe1Slitz21tom38qPCaG0DYCS1NnDPIQDTKcmQ/tvK/edJUKkmuIDBJbmKDiB0r/g=="
-  "resolved" "https://registry.npmjs.org/@types/ungap__global-this/-/ungap__global-this-0.3.1.tgz"
-  "version" "0.3.1"
-
 "@types/webpack-sources@*":
   "integrity" "sha512-LXn/oYIpBeucgP1EIJbKQ2/4ZmpvRl+dlrFdX7+94SKRUV3Evy3FsfMZY318vGhkWUS5MPhtOM3w1/hCOAOXcg=="
   "resolved" "https://registry.npmjs.org/@types/webpack-sources/-/webpack-sources-2.1.0.tgz"
@@ -2232,11 +2227,6 @@
   dependencies:
     "@typescript-eslint/types" "4.15.2"
     "eslint-visitor-keys" "^2.0.0"
-
-"@ungap/global-this@^0.4.2":
-  "integrity" "sha512-mHkm6FvepJECMNthFuIgpAEFmPOk71UyXuIxYfjytvFTnSDBIz7jmViO+LfHI/AjrazWije0PnSP3+/NlwzqtA=="
-  "resolved" "https://registry.npmjs.org/@ungap/global-this/-/global-this-0.4.4.tgz"
-  "version" "0.4.4"
 
 "@webassemblyjs/ast@1.9.0":
   "integrity" "sha512-C6wW5L+b7ogSDVqymbkkvuW9kruN//YisMED04xzeBBqjHa2FYnmvOlS6Xj68xWQRgWvI9cIglsjFowH/RJyEA=="
@@ -2391,12 +2381,12 @@
     "@types/node" ">=6"
     "tslib" "^1.9.3"
 
-"@wry/context@^0.5.2":
-  "integrity" "sha512-/pktJKHUXDr4D6TJqWgudOPJW2Z+Nb+bqk40jufA3uTkLbnCRKdJPiYDIa/c7mfcPH8Hr6O8zjCERpg5Sq04Zg=="
-  "resolved" "https://registry.npmjs.org/@wry/context/-/context-0.5.4.tgz"
-  "version" "0.5.4"
+"@wry/context@^0.6.0":
+  "integrity" "sha512-sAgendOXR8dM7stJw3FusRxFHF/ZinU0lffsA2YTyyIOfic86JX02qlPqPVqJNZJPAxFt+2EE8bvq6ZlS0Kf+Q=="
+  "resolved" "https://registry.npmjs.org/@wry/context/-/context-0.6.0.tgz"
+  "version" "0.6.0"
   dependencies:
-    "tslib" "^1.14.1"
+    "tslib" "^2.1.0"
 
 "@wry/equality@^0.1.2":
   "integrity" "sha512-mwEVBDUVODlsQQ5dfuLUS5/Tf7jqUKyhKYHmVi4fPB6bDMOfWvUPJmKgS1Z7Za/sOI3vzWt4+O7yCiL/70MogA=="
@@ -2405,19 +2395,19 @@
   dependencies:
     "tslib" "^1.9.3"
 
-"@wry/equality@^0.3.0":
-  "integrity" "sha512-1gQQhCPenzxw/1HzLlvSIs/59eBHJf9ZDIussjjZhqNSqQuPKQIzN6SWt4kemvlBPDi7RqMuUa03pId7MAE93g=="
-  "resolved" "https://registry.npmjs.org/@wry/equality/-/equality-0.3.4.tgz"
-  "version" "0.3.4"
+"@wry/equality@^0.4.0":
+  "integrity" "sha512-DxN/uawWfhRbgYE55zVCPOoe+jvsQ4m7PT1Wlxjyb/LCCLuU1UsucV2BbCxFAX8bjcSueFBbB5Qfj1Zfe8e7Fw=="
+  "resolved" "https://registry.npmjs.org/@wry/equality/-/equality-0.4.0.tgz"
+  "version" "0.4.0"
   dependencies:
-    "tslib" "^1.14.1"
+    "tslib" "^2.1.0"
 
-"@wry/trie@^0.2.1":
-  "integrity" "sha512-OxqBB39x6MfHaa2HpMiRMfhuUnQTddD32Ko020eBeJXq87ivX6xnSSnzKHVbA21p7iqBASz8n/07b6W5wW1BVQ=="
-  "resolved" "https://registry.npmjs.org/@wry/trie/-/trie-0.2.2.tgz"
-  "version" "0.2.2"
+"@wry/trie@^0.3.0":
+  "integrity" "sha512-Yw1akIogPhAT6XPYsRHlZZIS0tIGmAl9EYXHi2scf7LPKKqdqmow/Hu4kEqP2cJR3EjaU/9L0ZlAjFf3hFxmug=="
+  "resolved" "https://registry.npmjs.org/@wry/trie/-/trie-0.3.0.tgz"
+  "version" "0.3.0"
   dependencies:
-    "tslib" "^1.14.1"
+    "tslib" "^2.1.0"
 
 "@xtuc/ieee754@^1.2.0":
   "integrity" "sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA=="
@@ -8468,13 +8458,13 @@
   dependencies:
     "@wry/context" "^0.4.0"
 
-"optimism@^0.14.0":
-  "integrity" "sha512-ygbNt8n4DOCVpkwiLF+IrKKeNHOjtr9aXLWGP9HNJGoblSGsnVbJLstcH6/nE9Xy5ZQtlkSioFQNnthmENW6FQ=="
-  "resolved" "https://registry.npmjs.org/optimism/-/optimism-0.14.0.tgz"
-  "version" "0.14.0"
+"optimism@^0.15.0":
+  "integrity" "sha512-KLKl3Kb7hH++s9ewRcBhmfpXgXF0xQ+JZ3xQFuPjnoT6ib2TDmYyVkKENmGxivsN2G3VRxpXuauCkB4GYOhtPw=="
+  "resolved" "https://registry.npmjs.org/optimism/-/optimism-0.15.0.tgz"
+  "version" "0.15.0"
   dependencies:
-    "@wry/context" "^0.5.2"
-    "@wry/trie" "^0.2.1"
+    "@wry/context" "^0.6.0"
+    "@wry/trie" "^0.3.0"
 
 "optimize-css-assets-webpack-plugin@5.0.4":
   "integrity" "sha512-wqd6FdI2a5/FdoiCNNkEvLeA//lHHfG24Ln2Xm2qqdIk4aOlsR18jwpyOihqQ8849W3qu2DX8fOYxpvTMj+93A=="
@@ -11626,14 +11616,12 @@
   dependencies:
     "tslib" "^1.9.3"
 
-"ts-invariant@^0.6.0":
-  "integrity" "sha512-QQgN33g8E8yrdDuH29HASveLtbzMnRRgWh0i/JNTW4+zcLsdIOnfsgEDi/NKx4UckQyuMFt9Ujm6TWLWQ58Kvg=="
-  "resolved" "https://registry.npmjs.org/ts-invariant/-/ts-invariant-0.6.1.tgz"
-  "version" "0.6.1"
+"ts-invariant@^0.7.0":
+  "integrity" "sha512-UWDDeovyUTIMWj+45g5nhnl+8oo+GhxL5leTaHn5c8FkQWfh8v66gccLd2/YzVmV5hoQUjCEjhrXnQqVDJdvKA=="
+  "resolved" "https://registry.npmjs.org/ts-invariant/-/ts-invariant-0.7.3.tgz"
+  "version" "0.7.3"
   dependencies:
-    "@types/ungap__global-this" "^0.3.1"
-    "@ungap/global-this" "^0.4.2"
-    "tslib" "^1.9.3"
+    "tslib" "^2.1.0"
 
 "ts-pnp@^1.1.6", "ts-pnp@1.2.0":
   "integrity" "sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw=="
@@ -11656,6 +11644,11 @@
   "version" "1.14.1"
 
 "tslib@^2.0.3":
+  "integrity" "sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A=="
+  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz"
+  "version" "2.1.0"
+
+"tslib@^2.1.0":
   "integrity" "sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz"
   "version" "2.1.0"
