@@ -33,9 +33,12 @@ app.use('/graphql',graphqlHTTP({
     graphiql: true //! we wanna graphiql tool in /graphql path
 }));
 
-if(process.env.NODE_ENV === "production"){
+if(process.env.DB === "production"){
     app.use(express.static('client/build'));
+ 
 }
+
+process.env.DB === "production" ? new InvariantError() : new InvariantError(message)
 
 app.listen(PORT,() => {
     //! Callback function
