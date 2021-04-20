@@ -27,11 +27,11 @@ mongoose.connection.once('open',()=>{
     console.log("Connected to the Database!")
 })
 //! Setting up a middleware!
-app.use('/graphql',graphqlHTTP({
-    //! schema to represent how our graph looks
-    schema,
-    graphiql: true //! we wanna graphiql tool in /graphql path
-}));
+// app.use('/graphql',graphqlHTTP({
+//     //! schema to represent how our graph looks
+//     schema,
+//     graphiql: true //! we wanna graphiql tool in /graphql path
+// }));
 
 if(process.env.NODE_ENV === "production"){
     app.use(express.static('client/build'));

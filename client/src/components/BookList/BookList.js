@@ -26,7 +26,7 @@ class BookList extends Component {
     return (
       <div className="myList">
         <ul id="book-list"> {this.displayBooks()} 
-        <BookDetails bookId={this.state.selected}/> 
+        { this.state.selected ? <BookDetails bookId={this.state.selected}/> : null }
         </ul>{" "}
       </div>
     );
