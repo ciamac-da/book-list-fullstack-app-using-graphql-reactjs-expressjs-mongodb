@@ -33,7 +33,7 @@ app.use('/graphql',graphqlHTTP({
     graphiql: true //! we wanna graphiql tool in /graphql path
 }));
 
-if(process.env.DB === "production"){
+if(process.env.NODE_ENV === "production"){
     app.use(express.static('client/build'));
  
 }
