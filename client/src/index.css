@@ -14,11 +14,11 @@ body{
   display: flex;
   justify-content: center;
   text-align: center;
-  color: gray;
+  color: white;
   position: relative;
   top: 10px;
   padding: 20px;
-  
+  background-color:rgb(57, 146, 57);
 }
 
 #main{
@@ -166,3 +166,29 @@ form button:hover{
 .authorName{
   margin-top: 40px;
 }
+
+.mainText{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: rgb(56, 52, 52);
+
+}
+
+ footer {
+   margin-top: auto;
+   background-color:rgb(57, 146, 57);
+   text-align:center;
+   color: #fff;
+   position:fixed;
+   bottom: 0;
+   display:block;
+   width:100vw;
+   margin-bottom:0px;
+   height:33px
+ }
+ .typo {
+       color:"#fff";
+       font-weight: bolder;
+       padding: 10px;
+ }
