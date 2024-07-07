@@ -17,7 +17,7 @@
     "lodash": "^4.17.21",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -45,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^6.1.1"
   }
 }
